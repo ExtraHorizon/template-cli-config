@@ -1,6 +1,4 @@
-# template-cli-config
-
-## Overview
+# Template Extra Horizon CLI configuration
 
 This repository provides the basic configuration for your Extra Horizon cluster, including:
 
