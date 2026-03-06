@@ -1,5 +1,5 @@
 {
-  "description": "Mail send when a patient changes its email",
+  "description": "Mail send when a user changes its email",
   "inputs": {
       "firstname": {
         "type": "string"
