@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>{{ t 'password_reset_subject_v2' }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <div class="es-wrapper-color" style="background-color:#F6F6F6">
+      <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;background-color:#F6F6F6">
+        <tr>
+          <td valign="top" style="padding:20px;Margin:0">
+            <table class="es-footer" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">
+              <tr>
+                <td align="center" style="padding:0;Margin:0">
+                  <table class="es-footer-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px">
+                    <tr>
+                      <td align="left" style="padding:0;Margin:0">
+                        <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0;Margin:0;width:600px">
+                              <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                <tr>
+                                  <td align="center" style="padding:0;Margin:0;font-size:0px">
+                                    <img class="adapt-img" src="https://zdvgbg.stripocdn.email/content/guids/CABINET_6cd3e1ca95ab15182b3d6eb1023e064e22f10cfca62b6f3305f7183353e1a258/images/docs_banner_3.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600">
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding:20px;Margin:0">
+                        <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
+                              <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0">
+                                    <p>{{ t 'email_salutation_v2' firstname=@inputs.firstname }}</p>
+
+                                    <p style="text-align: justify">{{ t 'password_reset_intro_v2' }}</p>
+
+                                    {{#if @inputs.pin_code }}
+                                      <p style="text-align: justify">{{ t 'password_reset_pin_code_intro_v2' }}</p>
+                                    {{else}}
+                                      <p style="text-align: justify">{{ t 'password_reset_hash_intro_v2' }}</p>
+                                    {{/if}}
+
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding:20px;Margin:0">
+                        <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
+                              <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                <tr>
+                                  <td align="center" style="padding:0;Margin:0">
+                                    {{#if @inputs.pin_code }}
+                                      <strong> {{ @inputs.pin_code }}</strong>
+                                    {{else}}
+                                      <a href="https://app.extrahorizon.com/changepwd?host=${API_HOST}&hash={{ @inputs.reset_hash }}"> {{ t 'password_reset_link_text_v2' }} </a>
+                                    {{/if}}
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding:20px;Margin:0">
+                        <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0;Margin:0;width:560px">
+                              <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                <tr>
+                                  <td align="left" style="padding:0;Margin:0">
+
+                                    <p style="text-align: justify">{{ t 'password_reset_message_v2' }}</p>
+
+                                    <p style="text-align: justify">{{ t 'email_farewell_v2' }}<br> {{ t 'email_team_v2' }}</p>
+
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding:0;padding-bottom:20px;Margin:0">
+                        <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0;Margin:0;width:600px">
+                              <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                <tr>
+                                  <td align="center" style="padding:20px;Margin:0;font-size:0">
+                                    <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                      <tr>
+                                        <td style="padding:0;Margin:0;border-bottom:1px solid #cccccc;background:unset;height:1px;width:100%;margin:0px">
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

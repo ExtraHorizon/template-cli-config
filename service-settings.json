@@ -1,0 +1,28 @@
+{
+  "users": {
+    "passwordPolicy": {
+      "minimumLength": 6,
+      "maximumLength": 128,
+      "upperCaseRequired": true,
+      "lowerCaseRequired": true,
+      "symbolRequired": false,
+      "numberRequired": true
+    },
+    "verification": {
+      "enablePinCodeActivationRequests": false,
+      "enablePinCodeForgotPasswordRequests": false
+    },
+    "emailTemplates": {
+      "activationEmailTemplateName": "activate_account_mail",
+      "activationPinEmailTemplateName": "activate_account_mail",
+      "reactivationPinEmailTemplateName": "reactivate_account_mail",
+      "reactivationEmailTemplateName": "reactivate_account_mail",
+      "passwordResetEmailTemplateName": "password_reset_mail",
+      "passwordResetPinEmailTemplateName": "password_reset_mail"
+    }
+  },
+  "files": {
+    "disableForceDownloadForMimeTypes": []
+  },
+  "$schema": "https://swagger.extrahorizon.com/cli/1.13.0/config-json-schemas/ServiceSettings.json"
+}

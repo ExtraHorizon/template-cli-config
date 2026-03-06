@@ -1,0 +1,22 @@
+{
+  "email_salutation_v2": "Beste {{firstname}},",
+  "email_farewell_v2": "Met vriendelijke groet,",
+  "email_team_v2": "Het Extra Horizon-team",
+  "activate_account_subject_v2": "Activeer je account!",
+  "activate_account_welcome_v2": "Welkom bij Extra Horizon!",
+  "activate_account_hash_intro_v2": "Klik op de onderstaande link om je account te activeren:",
+  "activate_account_pin_code_intro_v2": "Gebruik onderstaande pincode om je account te activeren:",
+  "activate_account_link_text_v2": "Klik hier om je account te activeren.",
+  "activate_account_message_v2": "Door je account te activeren bevestig je je e-mailadres en zorg je ervoor dat medische verslagen en andere belangrijke informatie in je inbox worden bezorgd.",
+  "password_reset_subject_v2": "Extra Horizon wachtwoord reset",
+  "password_reset_intro_v2": "We hebben een verzoek ontvangen om je Extra Horizon-wachtwoord opnieuw in te stellen.",
+  "password_reset_hash_intro_v2": "Klik op de onderstaande link om een nieuw wachtwoord in te stellen:",
+  "password_reset_pin_code_intro_v2": "Gebruik de onderstaande pincode om een nieuw wachtwoord in te stellen:",
+  "password_reset_message_v2": "Heb je geen verzoek ingediend om je wachtwoord opnieuw in te stellen? Dan kun je deze e-mail veilig negeren.",
+  "password_reset_link_text_v2": "Klik hier om je wachtwoord opnieuw in te stellen.",
+  "reactivate_account_subject_v2": "Je e-mailadres is gewijzigd, activeer je account opnieuw",
+  "reactivate_account_intro_v2": "Het e-mailadres dat gekoppeld is aan je Extra Horizon-account is gewijzigd.",
+  "reactivate_account_hash_intro_v2": "Klik op de onderstaande link om deze wijziging te bevestigen en je account opnieuw te activeren:",
+  "reactivate_account_pin_code_intro_v2": "Gebruik de onderstaande pincode om deze wijziging te bevestigen en je account opnieuw te activeren:",
+  "reactivate_account_link_text_v2": "Klik hier om je account opnieuw te activeren."
+}

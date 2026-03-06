@@ -1,0 +1,26 @@
+{
+  "description": "Mail send when a user changes its email",
+  "inputs": {
+      "firstname": {
+        "type": "string"
+      },
+      "lastname": {
+        "type": "string"
+      },
+      "activation_hash": {
+        "type": "string"
+      },
+      "pin_code": {
+        "type": "string"
+      },
+      "tracking_hash": {
+        "type": "string"
+      }
+  },
+  "outputs": {
+    "subject": "{{t 'reactivate_account_subject_v2'}}"
+  },
+  "variables": {
+    "API_HOST": "${API_HOST}"
+  }
+}
