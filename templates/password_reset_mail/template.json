@@ -1,0 +1,23 @@
+{
+  "description": "Mail send when a patient changes its email",
+  "inputs": {
+    "firstname": {
+      "type": "string"
+    },
+    "reset_hash": {
+      "type": "string"
+    },
+    "pin_code": {
+      "type": "string"
+    },
+    "tracking_hash": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "subject": "{{t 'password_reset_subject_v2'}}"
+  },
+  "variables": {
+    "API_HOST": "${API_HOST}"
+  }
+}

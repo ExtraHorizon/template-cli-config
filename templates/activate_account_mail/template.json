@@ -1,0 +1,23 @@
+{
+  "description": "Mail send after account creation to validate the email address",
+  "inputs": {
+    "firstname": {
+      "type": "string"
+    },
+    "activation_hash": {
+      "type": "string"
+    },
+    "pin_code": {
+      "type": "string"
+    },
+    "tracking_hash": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "subject": "{{t 'activate_account_subject_v2'}}"
+  },
+  "variables": {
+    "API_HOST": "${API_HOST}"
+  }
+}
