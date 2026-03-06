@@ -20,9 +20,5 @@ This repository provides the basic configuration for your Extra Horizon cluster,
 
 ## Usage
 
-1. Clone this repository and navigate to its folder.
-2. Run the following command to create/update your cluster settings:
-
-```bash
-exh sync
-```
+- Clone this repository and navigate to its folder.
+- Run `exh sync` to create/update your cluster settings.
