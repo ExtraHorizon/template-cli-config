@@ -12,6 +12,7 @@ This repository provides the basic configuration for your Extra Horizon cluster,
 
 - Extra Horizon CLI (version >= 1.13.0) installed and configured for your target cluster.
   - [Installation guide](https://docs.extrahorizon.com/cli/readme/installation)
+- Ensure in your CLI credentials configuration the `API_HOST` value is set WITHOUT the `https` prefix. e.g. `api.dev.exh-infra2.extrahorizon.io` instead of `https://api.dev.exh-infra2.extrahorizon.io`
 - Verify installation and environment:
   - Run `exh --version` to check your CLI version.
   - Run `exh whoami` to confirm your CLI is targeting the correct environment.
