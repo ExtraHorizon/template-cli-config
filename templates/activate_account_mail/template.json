@@ -20,5 +20,5 @@
   "variables": {
     "API_HOST": "${API_HOST}"
   },
-  "$schema": "https://swagger.extrahorizon.com/cli/1.13.5/config-json-schemas/Template.json"
+  "$schema": "https://swagger.extrahorizon.com/cli/1.13.6/config-json-schemas/Template.json"
 }
